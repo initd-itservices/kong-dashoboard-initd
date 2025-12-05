@@ -32,10 +32,12 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <GitLinks />
-      <div className="footer-right">
-        <span className="footer-icon">🛰️</span>
-        <span className="footer-gateway">{gateway ? (gateway.name || gateway.kong_admin_url) : 'No gateway connected'}</span>
+      <div className="footer-inner">
+        <GitLinks />
+        <div className="footer-right">
+          <span className="footer-icon">🛰️</span>
+          <span className="footer-gateway">{gateway ? (gateway.name || gateway.kong_admin_url) : 'No gateway connected'}</span>
+        </div>
       </div>
     </footer>
   )

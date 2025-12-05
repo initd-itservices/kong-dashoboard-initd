@@ -1,7 +1,1 @@
-{
-  "/admin/settings/page": "app/admin/settings/page.js",
-  "/page": "app/page.js",
-  "/plugins/page": "app/plugins/page.js",
-  "/plugins/new/page": "app/plugins/new/page.js",
-  "/services/page": "app/services/page.js"
-}
+{}
