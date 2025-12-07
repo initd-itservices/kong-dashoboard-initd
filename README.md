@@ -1,9 +1,21 @@
-## More than just another GUI to [KONG Admin API](http://getkong.org)    [![Build Status](https://travis-ci.org/pantsel/konga.svg?branch=master)](https://travis-ci.org/pantsel/konga)    [![Gitter chat](https://badges.gitter.im/pantsel-konga/Lobby.png)](https://gitter.im/pantsel-konga/Lobby)
+## Kiko — Next.js Kong Dashboard
+
+Kiko is a modern Next.js frontend for managing and monitoring Kong.
 
 
-[![Dashboard](screenshots/bc3.png)](https://raw.githubusercontent.com/pantsel/konga/master/screenshots/bc2.png)
+[![Kiko Dashboard](screenshots/kiko-nextjs.png)](screenshots/kiko-nextjs.png)
 
-_Konga is not an official app. No affiliation with [Kong](https://www.konghq.com/)._
+_Kiko is not an official app. No affiliation with [Kong](https://www.konghq.com/)._ 
+
+### Quick Start (Next.js frontend)
+
+- Development: `cd nextjs && npm run dev` then open `http://localhost:3000/`
+- Build: `cd nextjs && npm run build`
+- Start (production): `cd nextjs && npm run start`
+
+### Screenshot
+
+- The main README displays `screenshots/kiko-nextjs.png`. If missing, create it by capturing the Dashboard page in your browser and save to `screenshots/kiko-nextjs.png`.
 
 ## Summary
 
