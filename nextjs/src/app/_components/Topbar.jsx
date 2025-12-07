@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function Topbar() {
   const [open, setOpen] = useState(false)
@@ -36,20 +37,20 @@ export default function Topbar() {
           <span className="topbar-title">API Gateway</span>
         </div>
         <div className="topbar-right">
-          <a href="#" className="topbar-icon" title="Notifications">🔔</a>
+          <a href="#" className="topbar-icon" title="Notifications"><Image src="/assets/images/icons/notification-icon.png" alt="" width={18} height={18} className="nav-icon" /></a>
           <div className="account">
-            <span className="avatar">👤</span>
+            <span className="avatar"><Image src="/assets/images/icons/user-icon.png" alt="" width={18} height={18} className="nav-icon" /></span>
             <button className="account-trigger" onClick={(e)=>{ e.stopPropagation(); toggle(e) }} aria-expanded={open} aria-haspopup="menu">
               <span className="account-label">Hi {userName}</span>
               <span className="caret">▾</span>
             </button>
             <div className={`dropdown${open ? ' open' : ''}`} onClick={(e) => e.stopPropagation()}>
-              <a href="/admin/users" className="dropdown-item"><span className="dropdown-icon">👤</span><span className="dropdown-label">Profile</span></a>
+              <a href="/admin/users" className="dropdown-item"><Image src="/assets/images/icons/user-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="dropdown-label">Profile</span></a>
               {isAdmin && (
-                <a href="/admin/users" className="dropdown-item"><span className="dropdown-icon">👥</span><span className="dropdown-label">Users</span></a>
+                <a href="/admin/users" className="dropdown-item"><Image src="/assets/images/icons/user-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="dropdown-label">Users</span></a>
               )}
-              <a href="/admin/settings" className="dropdown-item"><span className="dropdown-icon">⚙️</span><span className="dropdown-label">Settings</span></a>
-              <a href="/logout" className="dropdown-item"><span className="dropdown-icon">🚪</span><span className="dropdown-label">Logout</span></a>
+              <a href="/admin/settings" className="dropdown-item"><span className="dropdown-icon"><Image src="/assets/images/icons/settings-icon.png" alt="" width={18} height={18} className="nav-icon" /></span><span className="dropdown-label">Settings</span></a>
+              <a href="/logout" className="dropdown-item"><span className="dropdown-icon"><Image src="/assets/images/icons/logout-icon.png" alt="" width={18} height={18} className="nav-icon" /></span><span className="dropdown-label">Logout</span></a>
             </div>
           </div>
         </div>

@@ -29,8 +29,8 @@ export default function Sidebar() {
         <Image
           src={brandIcon}
           alt="Brand"
-          width={36}
-          height={36}
+          width={40}
+          height={40}
           className="brand-icon"
         />
         {!collapsed && <span>Kong Dashboard</span>}
@@ -44,19 +44,19 @@ export default function Sidebar() {
       <nav className="sidebar-nav">
         <div className="nav-section">
           <div className="nav-section-title">API Gateway</div>
-          <a href="/consumers" title="Consumers"><span className="nav-icon" aria-hidden>👤</span><span className="nav-label">Consumers</span></a>
-          <a href="/services" title="Services"><span className="nav-icon" aria-hidden>☁️</span><span className="nav-label">Services</span></a>
-          <a href="/routes" title="Routes"><span className="nav-icon" aria-hidden>🔀</span><span className="nav-label">Routes</span></a>
-          <a href="/plugins" title="Plugins"><span className="nav-icon" aria-hidden>🧩</span><span className="nav-label">Plugins</span></a>
-          <a href="/upstreams" title="Upstreams"><span className="nav-icon" aria-hidden>⬆️</span><span className="nav-label">Upstreams</span></a>
-          <a href="/certificates" title="Certificates"><span className="nav-icon" aria-hidden>🪪</span><span className="nav-label">Certificates</span></a>
+          <a href="/consumers" title="Consumers"><Image src="/assets/images/icons/user-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Consumers</span></a>
+          <a href="/services" title="Services"><Image src="/assets/images/icons/services-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Services</span></a>
+          <a href="/routes" title="Routes"><Image src="/assets/images/icons/routes-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Routes</span></a>
+          <a href="/plugins" title="Plugins"><Image src="/assets/images/icons/plugins-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Plugins</span></a>
+          <a href="/upstreams" title="Upstreams"><Image src="/assets/images/icons/upstream-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Upstreams</span></a>
+          <a href="/certificates" title="Certificates"><Image src="/assets/images/icons/certificate-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Certificates</span></a>
         </div>
         <div className="nav-section">
           <div className="nav-section-title">Admin</div>
-          <a href="/admin/users" title="Users"><span className="nav-icon" aria-hidden>👥</span><span className="nav-label">Users</span></a>
-          <a href="/admin/snapshots" title="Snapshots"><span className="nav-icon" aria-hidden>📸</span><span className="nav-label">Snapshots</span></a>
-          <a href="/admin/settings" title="Settings"><span className="nav-icon" aria-hidden>⚙️</span><span className="nav-label">Settings</span></a>
-          <a href="/connections" title="Connections"><span className="nav-icon" aria-hidden>🔗</span><span className="nav-label">Connections</span></a>
+          <a href="/admin/users" title="Users"><Image src="/assets/images/icons/users-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Users</span></a>
+          <a href="/admin/snapshots" title="Snapshots"><Image src="/assets/images/icons/snapshot-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Snapshots</span></a>
+          <a href="/admin/settings" title="Settings"><Image src="/assets/images/icons/settings-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Settings</span></a>
+          <a href="/connections" title="Connections"><Image src="/assets/images/icons/connection-icons.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Connections</span></a>
         </div>
       </nav>
     </aside>

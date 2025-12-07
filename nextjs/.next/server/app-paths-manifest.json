@@ -1,1 +1,5 @@
-{}
+{
+  "/admin/settings/page": "app/admin/settings/page.js",
+  "/certificates/new/page": "app/certificates/new/page.js",
+  "/services/page": "app/services/page.js"
+}

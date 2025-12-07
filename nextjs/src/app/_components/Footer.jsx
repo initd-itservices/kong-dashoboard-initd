@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-
+import Image from 'next/image'
 function GitLinks() {
   const issuesUrl = process.env.NEXT_PUBLIC_GITHUB_ISSUES_URL || '#'
   const supportUrl = process.env.NEXT_PUBLIC_GITHUB_SUPPORT_URL || '#'
@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="footer-inner">
         <GitLinks />
         <div className="footer-right">
-          <span className="footer-icon">🛰️</span>
+          <span className="footer-icon"><Image src="/assets/images/icons/gateway-disconnected.png" alt="" width={18} height={18} className="nav-icon" /></span>
           <span className="footer-gateway">{gateway ? (gateway.name || gateway.kong_admin_url) : 'No gateway connected'}</span>
         </div>
       </div>
