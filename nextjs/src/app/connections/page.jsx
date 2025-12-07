@@ -15,7 +15,10 @@ export default async function ConnectionsPage() {
   const connections = await getConnections()
   return (
     <div className="card">
-      <h1 className="title">Connections</h1>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <h1 className="title">Connections</h1>
+        <a href="/connections/new" style={{ textDecoration: 'none' }} className="badge" title="Add Connection">+ Add Connection</a>
+      </div>
       <table className="table">
         <thead>
           <tr>

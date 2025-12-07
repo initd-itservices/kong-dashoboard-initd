@@ -1,11 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/consumers/page": "app/consumers/page.js",
-  "/plugins/page": "app/plugins/page.js",
   "/certificates/page": "app/certificates/page.js",
-  "/upstreams/page": "app/upstreams/page.js",
   "/admin/users/page": "app/admin/users/page.js",
-  "/admin/snapshots/page": "app/admin/snapshots/page.js",
-  "/admin/settings/page": "app/admin/settings/page.js",
+  "/upstreams/page": "app/upstreams/page.js",
+  "/connections/new/page": "app/connections/new/page.js",
   "/connections/page": "app/connections/page.js"
 }
