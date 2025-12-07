@@ -44,6 +44,8 @@ export default function Sidebar() {
       <nav className="sidebar-nav">
         <div className="nav-section">
           <div className="nav-section-title">API Gateway</div>
+          <a href="/dashboard" title="Dashboard"><Image src="/assets/images/icons/dashboard-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Dashboard</span></a>
+          <a href="/info" title="Information"><Image src="/assets/images/icons/info-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Info</span></a>
           <a href="/consumers" title="Consumers"><Image src="/assets/images/icons/user-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Consumers</span></a>
           <a href="/services" title="Services"><Image src="/assets/images/icons/services-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Services</span></a>
           <a href="/routes" title="Routes"><Image src="/assets/images/icons/routes-icon.png" alt="" width={18} height={18} className="nav-icon" /><span className="nav-label">Routes</span></a>

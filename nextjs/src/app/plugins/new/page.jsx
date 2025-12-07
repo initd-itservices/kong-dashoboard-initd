@@ -1,13 +1,21 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { apiBaseUrl } from '../../../lib/api'
 
 export default function NewPluginPage() {
+  const searchParams = useSearchParams()
   const [form, setForm] = useState({ name: '', scope: 'global', targetId: '', config: '' })
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
 
   function update(key, val) { setForm((f) => ({ ...f, [key]: val })) }
+
+  useEffect(() => {
+    const name = searchParams.get('name') || ''
+    const scope = searchParams.get('scope') || ''
+    setForm(f => ({ ...f, name: name || f.name, scope: scope || f.scope }))
+  }, [searchParams])
 
   async function submit() {
     setSubmitting(true)
