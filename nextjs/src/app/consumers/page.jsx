@@ -17,7 +17,7 @@ export default async function ConsumersPage() {
     <div className="card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1 className="title">Consumers</h1>
-        <a href="/consumers/new" className="badge">Create Consumer</a>
+        <a href="/consumers/new" style={{ textDecoration: 'none' }} className="badge">Create Consumer</a>
       </div>
       <table className="table">
         <thead>

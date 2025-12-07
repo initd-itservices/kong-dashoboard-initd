@@ -17,7 +17,7 @@ export default async function PluginsPage() {
     <div className="card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1 className="title">Plugins</h1>
-        <a href="/plugins/new" className="badge">Add Plugin</a>
+        <a href="/plugins/new" style={{ textDecoration: 'none' }} className="badge">Add Plugin</a>
       </div>
       <table className="table">
         <thead>

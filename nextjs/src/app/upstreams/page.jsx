@@ -12,7 +12,7 @@ export default async function UpstreamsPage() {
     <div className="card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1 className="title">Upstreams</h1>
-        <a href="/upstreams/new" className="badge">Create Upstream</a>
+        <a href="/upstreams/new" style={{ textDecoration: 'none' }} className="badge">Create Upstream</a>
       </div>
       <table className="table">
         <thead>

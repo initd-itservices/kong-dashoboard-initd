@@ -17,7 +17,7 @@ export default async function ServicesPage() {
     <div className="card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1 className="title">Services</h1>
-        <a href="/services/new" className="badge">Create Service</a>
+        <a href="/services/new" style={{ textDecoration: 'none' }} className="badge">Create Service</a>
       </div>
       <table className="table">
         <thead>

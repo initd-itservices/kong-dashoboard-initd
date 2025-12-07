@@ -12,7 +12,7 @@ export default async function CertificatesPage() {
     <div className="card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1 className="title">Certificates</h1>
-        <a href="/certificates/new" className="badge">Add Certificate</a>
+        <a href="/certificates/new" style={{ textDecoration: 'none' }} className="badge">Add Certificate</a>
       </div>
       <table className="table">
         <thead>
